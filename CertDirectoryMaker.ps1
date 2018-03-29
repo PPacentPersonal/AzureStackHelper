@@ -12,7 +12,10 @@ $MandatoryCerts.Add([System.Tuple]::Create("KeyVault","*.vault"))
 $MandatoryCerts.Add([System.Tuple]::Create("KeyVaultInternal","*.adminvault"))
 $MandatoryCerts.Add([System.Tuple]::Create("ARM Admin","adminmanagement"))
 $MandatoryCerts.Add([System.Tuple]::Create("ARM Public","management"))
-$MandatoryCerts.Add([System.Tuple]::Create("ACS","na"))
+$MandatoryCerts.Add([System.Tuple]::Create("ACSBlob","*.blob"))
+$MandatoryCerts.Add([System.Tuple]::Create("ACSTable","*.table"))
+$MandatoryCerts.Add([System.Tuple]::Create("ACSQueue","*.queue"))
+
 
 $ADFSCerts = New-Object 'Collections.Generic.List[Tuple[string,string]]'
 $ADFSCerts.Add([System.Tuple]::Create("ADFS","ADFS"))
