@@ -46,13 +46,7 @@ If ($RecordName.contains("*")) {
     New-Item -Path $Path\$DirectoryName -Name "CertificateHelp.txt" -ItemType "file" -Value "Put PFX File here. 
     The Certificate's Subject or Subject Alternative Name must contain: `"$RecordName.[RegionName].[ExternalDomainFQDN]`""
     }
-elseif ($DirectoryName -eq "ACS") {
-    New-Item -Path $Path\$DirectoryName -Name "CertificateHelp.txt" -ItemType "file" -Value "Put PFX File here. 
-    The Certificate's Subject Alternative Names MUST contain each of the following records: 
-    `"*.blob.[RegionName].[ExternalDomainFQDN]`", 
-    `"*.table.[RegionName].[ExternalDomainFQDN]`", 
-    `"*.queue.[RegionName].[ExternalDomainFQDN]`""
-}
+
 else {
     New-Item -Path $Path\$DirectoryName -Name "CertificateHelp.txt" -ItemType "file" -Value "Put PFX File here. The Certificate's Subject or Subject Alternative Name must contain: 
     `"$RecordName.[RegionName].[ExternalDomainFQDN]`" 
