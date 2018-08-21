@@ -15,6 +15,8 @@ $MandatoryCerts.Add([System.Tuple]::Create("ARM Public","management"))
 $MandatoryCerts.Add([System.Tuple]::Create("ACSBlob","*.blob"))
 $MandatoryCerts.Add([System.Tuple]::Create("ACSTable","*.table"))
 $MandatoryCerts.Add([System.Tuple]::Create("ACSQueue","*.queue"))
+$MandatoryCerts.Add([System.Tuple]::Create("Admin Extension Host","*.adminhosting"))
+$MandatoryCerts.Add([System.Tuple]::Create("Public Extension Host","*.hosting"))
 
 
 $ADFSCerts = New-Object 'Collections.Generic.List[Tuple[string,string]]'
