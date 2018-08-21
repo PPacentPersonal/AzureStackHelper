@@ -1,4 +1,4 @@
-﻿# Create Cert Durectiry fir Secret Rotation
+﻿# Create Cert Directories for Secret Rotation
 Function MakeSecretRotationDirectory {
 
 mkdir "Certificates"
